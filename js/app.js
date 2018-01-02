@@ -275,13 +275,17 @@ resetBtn.onclick = function(e) {
  * @description listens for key presses and sends the keys to Player.handleInput() method.
  */
 document.addEventListener('keyup', function(e) {
+    // space button, control running and pause
+    if (e.keyCode == 32) {
+        startOrPauseBtn.click();
+    }
+
     let allowedKeys = {
         37: 'left',
         38: 'up',
         39: 'right',
         40: 'down'
     };
-
     if (player) {
         player.handleInput(allowedKeys[e.keyCode]);
     }
