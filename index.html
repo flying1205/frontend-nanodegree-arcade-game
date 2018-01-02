@@ -1,13 +1,35 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Effective JavaScript: Frogger</title>
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+    <div class="container">
+        <header>
+            <h1>Cross Fire</h1>
+        </header>
+        <section class="score-panel">
+            <span class="moves">0</span> Moves &nbsp&nbsp&nbsp&nbsp
+            <span class="time">0</span> Seconds &nbsp&nbsp&nbsp&nbsp
+            <span class="score">0</span> Score
+            <div class="restart">
+                <i class="fa fa-play startorpause"></i> &nbsp&nbsp&nbsp&nbsp
+                <!-- <i class="fa fa-pause pause"></i> &nbsp&nbsp&nbsp&nbsp -->
+                <i class="fa fa-repeat reset"></i>
+
+            </div>
+        </section>
+    </div>
+
     <script src="js/resources.js"></script>
     <script src="js/app.js"></script>
     <script src="js/engine.js"></script>
 </body>
+
 </html>
